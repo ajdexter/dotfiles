@@ -1,6 +1,10 @@
-autoload -Uz promptinit
-  promptinit
-  prompt spaceship
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
 
   autoload -U compinit
   compinit
+
+  autoload -U promptinit; promptinit
+  PURE_CMD_MAX_EXEC_TIME=10
+  prompt pure
