@@ -1,0 +1,6 @@
+autoload -Uz promptinit
+  promptinit
+  prompt spaceship
+
+  autoload -U compinit
+  compinit
