@@ -36,7 +36,7 @@
   "linter-ansible-linting": {}
   "linter-php": {}
   "linter-ui-default":
-    showPanel: true
+    panelHeight: 302
   minimap:
     absoluteMode: true
     adjustAbsoluteModeHeight: true

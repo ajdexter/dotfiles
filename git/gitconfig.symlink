@@ -20,7 +20,7 @@
 [apply]
         whitespace = nowarn
 [mergetool]
-        keepBackup = false
+	keepBackup = true
 [difftool]
         prompt = false
 [help]
