@@ -35,6 +35,7 @@ brew 'youtube-dl'
 brew 'zsh'
 brew 'zsh-autocomplete'
 brew 'zsh-syntax-highlighting'
+brew 'osquery'
 
 # cask '1password'
 # cask 'atom'
