@@ -1,22 +1,10 @@
 #!/usr/bin/env zsh
-
-
-
-
-#
-
 # zsh-async
-
 #
-
 # version: 1.7.0
-
 # author: Mathias Fredriksson
-
 # url: https://github.com/mafredri/zsh-async
-
 #
-
 
 
 
