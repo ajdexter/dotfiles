@@ -1,8 +1,12 @@
+#zmodload zsh/zprof
+
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Documents/repos
+
+export SPACESHIP_ROOT=$HOME/.dotfiles/zsh/themes/spaceship-prompt/
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -29,11 +33,16 @@ do
 done
 
 # initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
+skip_global_compinit=1
+#autoload -U compinit
+#compinit
 
-
-
+autoload -Uz compinit
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+  compinit
+else
+  compinit -C
+fi
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
@@ -52,31 +61,9 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
-  # Set Spaceship ZSH as a prompt
-  autoload -U promptinit; promptinit
-  prompt spaceship
-  SPACESHIP_PROMPT_ORDER=(
-  time          # Time stamps section
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  git           # Git section (git_branch + git_status)
-  package       # Package version
-  node          # Node.js section
-  golang        # Go section
-  docker        # Docker section
-  aws           # Amazon Web Services section
-  kubecontext   # Kubectl context section
-  exec_time     # Execution time
-  line_sep      # Line break
-  jobs          # Background jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
-)
-  SPACESHIP_TIME_SHOW=false
-  SPACESHIP_TIME_12HR=false
-  SPACESHIP_HOST_SHOW=true
-  SPACESHIP_DIR_SHOW=true
-  SPACESHIP_GIT_BRANCH_SHOW=true
-  SPACESHIP_GIT_STATUS_SHOW=true
-  SPACESHIP_NODE_SHOW=false
+#GEOMETRY_PROMPT_PLUGINS=(virtualenv docker_machine exec_time git hg)
+#PURE_GIT_PULL=0
+#PURE_GIT_DELAY_DIRTY_CHECK=0
+#PURE_CMD_MAX_EXEC_TIME=10
+
+source ~/.dotfiles/zsh/tools/zsh-autosuggestions/zsh-autosuggestions.zsh
