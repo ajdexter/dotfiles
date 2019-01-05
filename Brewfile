@@ -36,6 +36,7 @@ brew 'zsh'
 brew 'zsh-autocomplete'
 brew 'zsh-syntax-highlighting'
 brew 'osquery'
+brew 'exa'
 
 # cask '1password'
 # cask 'atom'
