@@ -8,6 +8,12 @@ mafredri/zsh-async
 rupa/z
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
+sparsick/ansible-zsh
+desyncr/auto-ls
+wting/autojump
+diazod/git-prune
+ltj/gitgo
+
 
 # these should be at last!
 sindresorhus/pure
