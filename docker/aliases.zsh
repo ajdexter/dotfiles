@@ -1,2 +1,4 @@
-alias d='docker $*'
-alias d-c='docker-compose $*'
+#!/bin/sh
+docker_prune() {
+	docker system prune --volumes -fa
+}
