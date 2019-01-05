@@ -1,0 +1,4 @@
+[submodule "zsh/themes/geometry"]
+	path = zsh/themes/geometry
+[submodule "zsh/themes/spaceship-prompt"]
+	path = zsh/themes/spaceship-prompt
