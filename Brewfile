@@ -38,6 +38,7 @@ brew 'zsh'
 brew 'osquery'
 brew 'exa'
 brew 'wireguard-tools'
+brew 'mas'
 
 # cask '1password'
 # cask 'atom'
