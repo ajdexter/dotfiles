@@ -9,13 +9,21 @@ rupa/z
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
 sparsick/ansible-zsh
-desyncr/auto-ls
+#desyncr/auto-ls
 wting/autojump
 diazod/git-prune
 ltj/gitgo
 
 
 # these should be at last!
+# Use Pure Theme
 sindresorhus/pure
+
+# Use Geometry Theme
+#geometry-zsh/geometry
+
+# Use Spaceship Theme
+#denysdovhan/spaceship-prompt
+
 zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-history-substring-search
