@@ -7,14 +7,12 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-tap "homebrew/php"
 tap "homebrew/services"
 tap "homebrew/versions"
 tap "lukakerr/things"
 tap "minio/stable"
 tap "sidaf/pentest"
 tap "swinton/brews"
-tap "tflint"
 
 # The Brews
 brew "ack"
@@ -102,13 +100,13 @@ brew "minio/stable/minio"
 brew "sidaf/pentest/snmpcheck"
 brew "swinton/brews/key2gif"
 brew "tflint"
+brew "minikube"
 
 # The Casks
 cask "firefox"
 cask "iina"
 cask "insomnia"
 cask "java"
-cask "minikube"
 cask "pgadmin4"
 cask "vagrant"
 cask 'vagrant-manager'
@@ -120,23 +118,22 @@ cask 'alfred'
 cask 'hazel'
 cask 'google-chrome'
 cask 'slack'
+cask 'dash'
 
 # The App Stores
-mas "1Password", id: 443987910
+#mas "1Password", id: 443987910
 mas "Agenda", id: 1287445660
 mas "Amphetamine", id: 937984704
 mas "Apple Configurator 2", id: 1037126344
 mas "Bear", id: 1091189122
-mas "Bitdefender Virus Scanner", id: 500154009
 mas "CARROT Weather", id: 993487541
 mas "Color Picker", id: 641027709
-mas "Compressor", id: 424390742
-mas "Contacts Cleaner", id: 411369012
+#mas "Compressor", id: 424390742
+#mas "Contacts Cleaner", id: 411369012
 mas "DaisyDisk", id: 411643860
-mas "Day One", id: 1055511498
+#mas "Day One", id: 1055511498
 mas "Deliveries", id: 924726344
-mas "Disk Speed Test", id: 425264550
-mas "Final Cut Pro", id: 424389933
+#mas "Final Cut Pro", id: 424389933
 mas "ForkLift", id: 412448059
 mas "Gemini 2", id: 1090488118
 mas "GhosteryLite", id: 1436953057
@@ -145,23 +142,21 @@ mas "JPEGmini Lite", id: 525742250
 mas "Kaleidoscope", id: 587512244
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
-mas "MindNode", id: 1289197285
-mas "MindNode Pro", id: 402398561
+#mas "MindNode", id: 1289197285
+#mas "MindNode Pro", id: 402398561
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pastebot", id: 1179623856
-mas "Pocket", id: 568494494
-mas "Polymail", id: 1134717305
-mas "Reeder", id: 880001334
+#mas "Pocket", id: 568494494
+#mas "Polymail", id: 1134717305
+#mas "Reeder", id: 880001334
 mas "Remote Desktop", id: 409907375
 mas "Renamer 5", id: 1063661581
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
-mas "Speedtest", id: 1153157709
-mas "TeamSQL", id: 1427496069
+#mas "TeamSQL", id: 1427496069
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
-mas "Tweetbot", id: 557168941
-mas "Ulysses", id: 1225570693
+#mas "Tweetbot", id: 557168941
 mas "Wunderlist", id: 410628904
 mas "Xcode", id: 497799835
