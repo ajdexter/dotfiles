@@ -14,7 +14,7 @@ tap "lukakerr/things"
 tap "minio/stable"
 tap "sidaf/pentest"
 tap "swinton/brews"
-tap "wata727/tflint"
+tap "tflint"
 
 # The Brews
 brew "ack"
@@ -101,7 +101,7 @@ brew "minio/stable/mc"
 brew "minio/stable/minio"
 brew "sidaf/pentest/snmpcheck"
 brew "swinton/brews/key2gif"
-brew "wata727/tflint/tflint"
+brew "tflint"
 
 # The Casks
 cask "firefox"
